@@ -25,6 +25,7 @@
     imv
     mpv
     vlc
+    starship
   ]);
 
 
