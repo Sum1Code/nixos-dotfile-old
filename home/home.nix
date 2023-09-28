@@ -21,6 +21,10 @@
     git
     btop
     gh
+    ffmpeg_6-full
+    imv
+    mpv
+    vlc
   ]);
 
 
