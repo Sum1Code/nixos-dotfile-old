@@ -8,6 +8,7 @@
 	./dunst
 	./swaylock
 	./wlogout
-	./neovim
+    ./neovim
+    ./starship
 	];
 }
