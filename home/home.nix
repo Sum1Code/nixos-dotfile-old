@@ -31,7 +31,7 @@
 
   programs.fish = {
     enable = true;
-    shellInit = ''
+    interactiveShellInit = '';
       starship init fish | source
     '';
    
