@@ -9,6 +9,5 @@
 	./swaylock
 	./wlogout
     ./neovim
-    ./starship
 	];
 }

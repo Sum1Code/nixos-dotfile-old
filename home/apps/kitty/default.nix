@@ -97,7 +97,4 @@
      inactive_tab_background #1f2335
     # macos_titlebar_color #1f2335  '';
 
-  home.file.".config/fish/config.fish".text = ''
-    starship init fish | source
-  '';
-}
+  }

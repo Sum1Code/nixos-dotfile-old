@@ -29,12 +29,12 @@
     vscode
   ]);
 
-  programs.fish = {
-    enable = true;
-    interactiveShellInit = '';
-      starship init fish | source
-    '';
-   
+programs.kitty.shellIntegration.enableFishIntegration = true;
+   programs.fish = {
+     enable = true;
+     shellInit = ''
+       starship init fish | source
+     '';
   };
   programs.home-manager.enable = true;
   home.stateVersion = "23.05";
