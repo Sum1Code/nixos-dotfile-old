@@ -29,10 +29,10 @@
     vscode
   ]);
 
-  programs.zsh = {
+  programs.fish = {
     enable = true;
-    initExtra = ''
-      eval "$(starship init zsh)"
+    shellInit = ''
+      starship init fish | source
     '';
    
   };

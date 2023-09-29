@@ -45,7 +45,7 @@
       virtualisation.libvirtd.enable = true;
       users.users.nocta.extraGroups = [ "libvirtd" ];
       services.xserver.displayManager.sessionPackages = [ pkgs.hyprland ];
-      programs.zsh.enable = true;
-      users.defaultUserShell = pkgs.zsh;
+      programs.fish.enable = true;
+      users.defaultUserShell = pkgs.fish;
 
     }
