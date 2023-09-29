@@ -26,9 +26,16 @@
     mpv
     vlc
     starship
+    vscode
   ]);
 
-
+  programs.zsh = {
+    enable = true;
+    initExtra = ''
+      eval "$(starship init zsh)"
+    '';
+   
+  };
   programs.home-manager.enable = true;
   home.stateVersion = "23.05";
 }

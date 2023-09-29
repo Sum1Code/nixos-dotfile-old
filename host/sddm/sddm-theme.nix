@@ -10,17 +10,17 @@ in
 pkgs.stdenv.mkDerivation {
   name = "sddm-theme";
   src = pkgs.fetchFromGitHub {
-    owner = "Kangie";
-    repo = "sddm-sugar-candy";
-    rev = "a1fae5159c8f7e44f0d8de124b14bae583edb5b8";
-    sha256 = "18wsl2p9zdq2jdmvxl4r56lir530n73z9skgd7dssgq18lipnrx7";
+    owner = "MarianArlt";
+    repo = "sddm-chili" ;
+    rev = "6516d50176c3b34df29003726ef9708813d06271";
+    sha256 = "wxWsdRGC59YzDcSopDRzxg8TfjjmA3LHrdWjepTuzgw=";
   };
   installPhase = ''
     			mkdir -p $out
     			cp -R ./* $out/
     			cd $out/
-    			rm Backgrounds/Mountain.jpg
-    			cp -r ${image} $out/Backgrounds/Mountain.jpg
+    			rm assets/background.jpg
+    			cp -r ${image} $out/assets/background.jpg
 
     		'';
 }

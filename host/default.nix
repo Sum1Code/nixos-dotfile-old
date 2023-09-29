@@ -30,8 +30,9 @@
         slurp
         clang
         wlogout
-        waydroid
         libsForQt5.qt5.qtgraphicaleffects
+        virt-manager
+        qemu
       ];
       xdg.portal.enable = true;
       xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
@@ -40,5 +41,11 @@
         (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
         noto-fonts
       ];
+      virtualisation.waydroid.enable = true;
+      virtualisation.libvirtd.enable = true;
+      users.users.nocta.extraGroups = [ "libvirtd" ];
       services.xserver.displayManager.sessionPackages = [ pkgs.hyprland ];
+      programs.zsh.enable = true;
+      users.defaultUserShell = pkgs.zsh;
+
     }
