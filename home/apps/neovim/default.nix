@@ -35,6 +35,7 @@
         plugin = lualine-nvim;
         config = toLua "require('lualine').setup()";
       }
+      
 
       nvim-cmp
       cmp_luasnip
